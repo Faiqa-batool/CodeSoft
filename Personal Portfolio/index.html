@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiqa Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/f86df855c0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="logo">
+                    <p>Faiqa Batool</p>
+                </a>
+                <i class='bx bx-menu' id="menu-icon"></i>
+
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header" class="active">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+    <!-- Home -->
+
+    <div class="home">
+        <div class="header-text">
+            <p>Hi! I am</p>
+            <h1><span>Faiqa Batool</span></h1>
+            <p>And I am a
+                <span class="multiple-text">
+                    <!-- Frotend Developer -->
+                </span>
+            </p>
+        </div>
+        <div class="home-img">
+            <iframe src="https://giphy.com/embed/LMcB8XospGZO8UQq87"></iframe>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am Faiqa Batool, a Frontend Web Developer with a specialization in React.js. My programming proficiency encompasses languages such as C++, Python, R, Assembly Language Programming, and PHP. I possess hands-on experience in web development, utilizing HTML, CSS, and JavaScript. Additionally, I have worked with MathWorks MATLAB software.
+                        My expertise extends to Database Management Systems, specifically utilizing XAMPP and the MySQL query language. I also have a strong background in web/app prototyping, having successfully designed and developed interactive prototypes for various web and mobile applications using MIRO and FLOWMAP.
+                        Throughout my career, I've contributed to a variety of projects, including Travel The World Website, Personal Portfolio, Facebook Login Page, Instagram Home Page Clone, Pepsi.com Website Clone, Simply Recipe Website, Simple Calculator, QR Code Generator, Website Landing Pages, and various Animation Projects. I am recognized for creating engaging Portfolio Galleries and am enthusiastic about leveraging my skills for web development and software projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JavaScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>Php</span></li>
+                            <li><span>R</span></li>
+                            <li><span>MySQL</span></li>
+                            <li><span>Assembly Language Programming</span></li>
+                            <li><span>Computer Graphics</span><br>using C++ and glut library</li>
+                            <li><span>MATLAB</span></li>
+                            <li><span>XAMPP</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Web Development internship at CodeSoft</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Matric (Science) from Shumaila Public Secondary School</li>
+                            <li><span>2020</span><br>Intermediate (Pre-Engineering) from Hawwa Jee Girls College</li>
+                            <li><span>2020-current</span><br>BS Computer Science From University Of Karachi</li>
+                            <li><span>2022-current</span><br>Mobile and Web App Development from Saylani Mass IT Training (SMIT)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <i class="fa-solid fa-code " ></i>
+                <h2>Web Development</h2>
+                <p>I develop creative web designs</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service-list">
+                <i class="fa-brands fa-python" ></i>
+                <h2>Python Programmer</h2>
+                <p>I can program in Python efficiently</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service-list">
+                <i class="fa-regular fa-c" ></i>
+                <h2>C++ Programmer</h2>
+                <p>I can program in C++ efficiently</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="project">
+        <div class="container">
+            <h1 class="subtitle">My Latest Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/pepsi2.avif" alt="">
+                    <div class="layer">
+                        <h3>Pepsi.com Clone</h3>
+                        <p>The clone of Pepsi.com website, using HTML, CSS and 
+                        JavaScript, with animation.</p>
+                        <a href="https://pepsihackathon.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/traveltheworld.avif" alt="">
+                    <div class="layer">
+                        <h3>Travel The World</h3>
+                        <p>A fully responsive travel website using HTML,CSS and 
+                        JavaScript where you can book your flight and Hotel Package
+                        to visit your dream place around the world.</p>
+                        <a href="https://traveltheworld-hackathon.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/smitproject.avif" alt="">
+                    <div class="layer">
+                        <h3>SMIT Attendance Application</h3>
+                        <p>A functional website for Attendance Management System
+                        at SMIT, having Student and Admin pages, using HTML, CSS, 
+                        JavaScript and FireBase.</p>
+                        <a href="https://dreamy-valkyrie-9b4852.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/project4.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Simply Recipe</h3>
+                        <p>A fully responsive recipe website for cooking lovers.</p>
+                        <a href="https://simplyrecipe1.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/pcb1.avif" alt="">
+                    <div class="layer">
+                        <h3>Process Control Block</h3>
+                        <p>An implementation of Process Control Block of Round Robin 
+                        Schedulling Algorithm to schedule processes in Operating System
+                        using Python </p>
+                        <a href="https://github.com/Faiqa-batool/Operating-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/LA.avif" alt="">
+                    <div class="layer">
+                        <h3>Lexical Analyzer</h3>
+                        <p>An implementation of lexical analyzer of CeePy Language, which 
+                        generates tokens of the source code, implemented using Python.</p>
+                        <a href="https://github.com/Faiqa-batool/Compiler-Construction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>faiqa.b48@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/faiqa-batool-897b14250/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Faiqa-batool"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./assets/Faiqa_Batool_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Messsage" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Faiqa Batool <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script defer src="./assets/js/app.js"></script>
+</body>
+
+</html>
